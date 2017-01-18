@@ -1,0 +1,40 @@
+#rotate {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg); 
+}
+
+#skew {
+  -webkit-transform: skewX(20deg);
+  -ms-transform: skewX(20deg);
+  transform: skewX(20deg);
+
+}
+
+#all {
+  -webkit-transform: rotate(50deg) skewX(20deg);
+  -ms-transform: rotate(50deg) skewX(20deg);
+  transform: rotate(50deg) skewX(20deg);
+}
+
+
+
+#animate {
+  -webkit-animation: background 3s cubic-bezier(1,0,0,1) infinite;
+  animation: background 3s cubic-bezier(1,0,0,1) infinite;  
+}
+
+
+@-webkit-keyframes background {
+  0% { background-color: #f99; }
+  33% { background-color: #ff1a1a; }  
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+}
+
+@keyframes background {
+  0% { background-color: #f99; }
+  33% { background-color: #ff1a1a; }  
+  67% { background-color: #99f; }
+  100% { background-color: #f99; }
+}
