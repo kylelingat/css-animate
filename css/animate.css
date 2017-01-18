@@ -21,7 +21,18 @@
 
 #animate {
   -webkit-animation: background 3s cubic-bezier(1,0,0,1) infinite;
-  animation: background 3s cubic-bezier(1,0,0,1) infinite;  
+  animation: background 3s cubic-bezier(1,0,0,1) infinite; 
+}
+
+#csstrigger:hover {
+  -webkit-transform: rotate(20deg);
+  -ms-transform: rotate(20deg);
+  transform: rotate(20deg);
+  -webkit-animation-name:             rotate; 
+  -webkit-animation-duration:         0.5s; 
+  -webkit-animation-iteration-count:  infinite;
+  -webkit-animation-timing-function: linear; 
+
 }
 
 
@@ -37,4 +48,13 @@
   33% { background-color: #ff1a1a; }  
   67% { background-color: #99f; }
   100% { background-color: #f99; }
+}
+
+@-webkit-keyframes rotate {
+  from {
+    -webkit-transform: rotate(0deg);
+  }
+  to { 
+    -webkit-transform: rotate(360deg);
+  }
 }
